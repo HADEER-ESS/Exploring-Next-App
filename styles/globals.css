@@ -14,7 +14,20 @@ a {
 * {
   box-sizing: border-box;
 }
-
+input:focus-visible{
+  outline-width: 0px;
+  outline-style: none;
+  outline-color: transparent;
+  outline-offset: 0px;
+  border-width: 0px;
+}
+input{
+  outline-width: 0px;
+  outline-style: none;
+  outline-color: transparent;
+  outline-offset: 0px;
+  border-width: 0px;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
