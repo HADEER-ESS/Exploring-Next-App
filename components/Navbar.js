@@ -3,6 +3,7 @@ import { Box, IconButton, Toolbar, Typography, AppBar, TextField } from '@mui/ma
 import AppLogo from "../public/18-location-pin-lineal.gif";
 import SearchIcon from '@mui/icons-material/Search';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [ val , setVal ] = useState("") ;
@@ -14,6 +15,7 @@ const Navbar = () => {
     <Box sx={{ flexGrow: 1 }}>
     <AppBar position="static">
       <Toolbar style={{ display:"flex" , justifyContent:"center" , alignItems:"center"}}>
+        <Link href="/">
         <IconButton
           size="large"
           edge="start"
@@ -23,6 +25,7 @@ const Navbar = () => {
         >
           <Image src={AppLogo} alt="application logo" height={60} width={60}/>
         </IconButton>
+        </Link>
         <Typography
           variant="h6"
           noWrap
